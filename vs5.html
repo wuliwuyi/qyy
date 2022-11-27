@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Please contact me！</title>
+<style> 
+.fan4{
+		 
+         display:inline-block;
+         width:200px;
+         height:100px;
+         background:rgba(0, 0, 0, 0.3);
+         text-align: center;
+         line-height: 100px;
+         color: lightblue;
+         text-decoration: none;
+         font-size: 40px;
+     
+     }
+   
+body{
+           background: url("./3.jpeg") no-repeat center center fixed;
+                    /*兼容浏览器版本*/
+                    -webkit-background-size: cover;
+                    -o-background-size: cover;                
+                    background-size: cover;          
+        }
+	.post{
+		position: absolute;
+		left: 650px;
+	
+	}
+	button{
+		width: 100px;
+		height: 50px;
+		font-size: 40px;
+	}
+	</style>
+</head>
+<body>
+    <div>
+        <a class="fan4" href="index.html">Home</a>
+      </div>
+<h1 style="font-size: 70px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Contact &nbsp;me</h1>
+<form id="contact_form" name="contact_form" method="post">
+    <div class="mb-5 row">
+        <div class="col">
+            <label style="font-size: 40px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; First Name</label>
+            <input type="text" required maxlength="50" class="form-control" id="first_name" name="first_name" style="height: 40px;width: 200px;">
+        </div>
+        <div class="col">
+            <label style="font-size: 40px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Last Name</label>
+            <input type="text" required maxlength="50" class="form-control" id="last_name" name="last_name" style="height: 40px;width: 200px;">
+        </div>
+    </div>
+    <div class="mb-5 row">
+        <div class="col">
+            <label for="email_addr" style="font-size: 40px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Email address</label>
+            <input type="email" required maxlength="50" class="form-control" id="email_addr" name="email"
+                 style="height: 40px;width: 200px;">
+        </div>
+        <div class="col">
+            <label for="phone_input" style="font-size: 40px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Phone</label>
+            <input type="tel" required maxlength="50" class="form-control" id="phone_input" name="Phone"
+               style="height: 40px;width: 200px;">
+        </div>
+    </div>
+    <div class="mb-5">
+		<br>
+        <label for="message" style="font-size: 40px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Message</label>
+        <textarea class="form-control" id="message" name="message" rows="5" maxlength="100;" style="height: 80px;width: 300px;"></textarea>
+    </div>
+    <div class="post"><button type="submit" class="btn btn-lg btn-primary" >Post</button>
+		</div>
+</form>
+</body>
+</html>
